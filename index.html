@@ -1,85 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>pawelszojda Landing Page</title>
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="logo"> Dev Portfolio </div>
-      <div class="links">
-        <a href="#Home">Home</a>
-        <a href="https://github.com/pawelszojda" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/pawe%C5%82-szojda-1a627526b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-    </div>
-    <div class="hero">
-        <div class="content">
-            <h1>Your personal Web Developer & IT Guy</h1>
-            <p>Stop juggling multiple contractors. I build responsive, fast websites for small businesses and provide the IT support to keep your office running smoothly.</p>
-            <a href="mailto:pawelszojda@icloud.com">Get in touch</a>
-        </div>
-        <div>
-            <img src="Paweł Szojda Landing Page Header.png" alt="Paweł Szojda Landing Page Header" width="600" height="300">
-        </div>
-    </div>
-    <div class="information">
-        <h2>Comprehensive Tech Solutions</h2>
-        <div class="boxes">
-            <div class="box">
-                <h3>Custom Websites</h3>
-                <img src="browser.svg" alt="browser" width="100" height="100">
-                <h4>Modern, mobile-friendly websites built with HTML, CSS, and React/JS</h4>
-            </div>
-            <div class="box">
-                <h3>IT Troubleshooting</h3>
-                <img src="computer.svg" alt="computer" width="100" height="100">
-                <h4>Hardware repairs, network setup, and software debugging for your home or office</h4>
-            </div>
-            <div class="box">
-                <h3>System Maintenance</h3>
-                <img src="wrench.svg" alt="wrench" width="100" height="100">
-                <h4>Regular website updates, data backups, and security patching to keep you safe</h4>
-            </div>
-            <div class="box">
-                <h3>Tech Consulting</h3>
-                <img src="person.svg" alt="person" width="100" height="100">
-                <h4>Honest advice on what hardware to buy or which software fits your business needs</h4>
-            </div>
-        </div>
-    </div>
-    <div class="quote">
-        <p>Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.</p>
-        <h4>- Albert Einstein</h4>
-    </div>
-    <div class="cta">
-        <div class="text">
-            <h2>Ready to elevate your tech?</h2>
-            <p>Whether you need a web application or just need your laptop fixed, I'm here to help.</p>
-        </div>
-        <a href="mailto:pawelszojda@icloud.com">Contact me</a>
-    </div>
-    <div class="footer">
-        <p>Copyright &copy; Pawel Szojda 2026. All rights reserved.</p>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/paweł-szojda-1a627526b" target="_blank" rel="noopener noreferrer">
-                <img 
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" 
-                    alt="LinkedIn" 
-                />
-            </a>
 
-            <a href="https://github.com/pawelszojda" target="_blank" rel="noopener noreferrer">
-                <img 
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" 
-                    alt="GitHub" 
-                    class="invert-color"
-                />
-            </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Paweł Szojda - Product Engineer & Solutions Architect focused on business process automation, systems integration, and scalable software.">
+  <meta property="og:title" content="Paweł Szojda - Product Engineer & Solutions Architect">
+  <meta property="og:description"
+    content="Bridging the gap between business requirements and technical execution through architecture, automation, and product-minded engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pawelszojda.github.io/">
+  <meta property="og:site_name" content="Paweł Szojda Portfolio">
+  <meta name="theme-color" content="#0A0A0A">
+  <title>Paweł Szojda - Product Engineer & Solutions Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="#hero" aria-label="Go to home section">
+          <img src="assets/images/home.svg" alt="" aria-hidden="true">
+        </a>
+        <div class="nav-links">
+          <a class="nav-link" href="#impact">Impact</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#expertise">Expertise</a>
+          <a class="nav-link" href="#insights">Insights</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </div>
+      </nav>
     </div>
-  </body>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Product engineering · architecture · automation</p>
+          <h1>
+            <span>Product Engineer</span>
+            <span>&amp; Solutions Architect</span>
+          </h1>
+          <p class="hero-subheadline">
+            Bridging the gap between business requirements and technical execution.
+          </p>
+          <p class="hero-description">
+            I partner with stakeholders to turn complex business challenges
+            into reliable, scalable software. Four years of evolving from
+            support to architecture means I see the full product lifecycle -
+            and I know where the real leverage is.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="#contact">Let's Talk</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside" data-reveal>
+          <figure class="profile-card">
+            <img class="profile-image" src="assets/images/profile-placeholder.avif" alt="Portrait of Paweł Szojda" width="400" height="500">
+            <figcaption class="profile-meta">
+              <p class="profile-name">Paweł Szojda</p>
+              <p class="profile-description">Product Engineer focused on automation, integrations, and architecture.
+                Interested in roles where business context matters as much as technical execution.</p>
+            </figcaption>
+          </figure>
+
+          <div class="hero-panel">
+            <p class="panel-label">How I work</p>
+            <div class="panel-item">
+              <span>01</span>
+              <div>
+                <h2>Start with the constraint</h2>
+                <p>Understand where the business is losing time, money, or clarity.</p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <span>02</span>
+              <div>
+                <h2>Keep the system simple</h2>
+                <p>Choose the architecture that solves the problem without adding noise.</p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <span>03</span>
+              <div>
+                <h2>Measure the result</h2>
+                <p>Focus on fewer errors, faster operations, and less manual work.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="container impact-grid">
+        <div data-reveal>
+          <p class="section-label">Philosophy</p>
+          <h2>The Impact</h2>
+        </div>
+        <div class="impact-content" data-reveal>
+          <p class="impact-title">Software-driven Optimization</p>
+          <div class="rich-text">
+            <p>I don't close tickets. I optimize processes.</p>
+            <p>
+              My approach starts with understanding the business constraint -
+              then designing the simplest technical system that removes it.
+              Whether it's an API integration that eliminates manual data entry,
+              an internal tool that saves 10 hours of weekly work, or an
+              architectural decision that prevents six months of technical debt -
+              the output is always measured in business value, not lines of code.
+            </p>
+          </div>
+          <div class="metrics" aria-label="Key metrics">
+            <article class="metric">
+              <strong>4+</strong>
+              <span>Years in product &amp; architecture</span>
+            </article>
+            <article class="metric">
+              <strong>3</strong>
+              <span>Industries (MedTech, Distribution, Logistics)</span>
+            </article>
+            <article class="metric">
+              <strong>∞</strong>
+              <span>Processes automated</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Case studies</p>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <span class="tag">Open Source</span>
+            <h3>Conference Room Booking System</h3>
+            <div class="project-details">
+              <div>
+                <p class="project-heading">Context</p>
+                <p>Full-stack room reservation platform built with ASP.NET Core MVC, EF Core, and SQLite.</p>
+              </div>
+              <div>
+                <p class="project-heading">Problem</p>
+                <p>Teams lost time to double-bookings and manual coordination with no centralized system or approval
+                  flow.</p>
+              </div>
+              <div>
+                <p class="project-heading">Solution</p>
+                <p>Built role-based auth (ASP.NET Identity), server-side conflict detection, and an admin dashboard with
+                  full CRUD and reservation approval workflow.</p>
+              </div>
+              <div>
+                <p class="project-heading">Outcome</p>
+                <p>Eliminated scheduling conflicts via enforced booking rules. Covers 9+ core .NET competencies
+                  end-to-end in a single deployable app.</p>
+              </div>
+            </div>
+            <div class="pill-row" aria-label="Project stack">
+              <span class="pill">C#</span>
+              <span class="pill">ASP.NET Core</span>
+              <span class="pill">Entity Framework</span>
+              <span class="pill">SQLite</span>
+              <span class="pill">Bootstrap</span>
+            </div>
+            <a class="project-link" href="https://github.com/pawelszojda/ConferenceRoomBooking/" target="_blank"
+              rel="noopener noreferrer">GitHub →</a>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <span class="tag">Enterprise · NDA</span>
+            <h3>B2B Medical Distribution Platform</h3>
+            <div class="project-details">
+              <div>
+                <p class="project-heading">Context</p>
+                <p>Medical-products distributor managing commercial workflows across internal sales teams and external
+                  client companies, with a hard dependency on ERP synchronization and public tender compliance.</p>
+              </div>
+              <div>
+                <p class="project-heading">Problem</p>
+                <p>Tender processing was entirely spreadsheet-driven with no validation layer. Offer approval chains had
+                  no systematic tracking. ERP order dispatch required manual coordinator intervention on every transfer.
+                </p>
+              </div>
+              <div>
+                <p class="project-heading">Solution</p>
+                <p>Helped building a multi-role Rails monolith covering the full commercial lifecycle - offer creation
+                  with
+                  price-threshold approval flows, order state management, automated Subiekt ERP dispatch, and an async
+                  AI pipeline for spreadsheet normalization via OpenAI.</p>
+              </div>
+              <div>
+                <p class="project-heading">Outcome</p>
+                <p>Full order lifecycle automated from offer to ERP dispatch with zero manual handoffs. Tender
+                  spreadsheet normalization reduced from hours to minutes. Role-based access enforced across 8+ distinct
+                  user roles spanning internal staff and client organizations.</p>
+              </div>
+            </div>
+            <div class="pill-row" aria-label="Project stack">
+              <span class="pill">Ruby on Rails</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Sidekiq</span>
+              <span class="pill">OpenAI</span>
+              <span class="pill">Subiekt ERP</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Capabilities</p>
+          <h2>Technology &amp; Expertise</h2>
+        </div>
+        <div class="expertise-grid">
+
+          <article class="expertise-card" data-reveal>
+            <h3>Core Languages</h3>
+            <div class="pill-row">
+              <span class="pill">Ruby on Rails</span>
+              <span class="pill">C# / .NET</span>
+              <span class="pill">Python</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">SQL (PostgreSQL, T-SQL)</span>
+              <span class="pill">Google Apps Script</span>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <h3>Architecture &amp; Integration</h3>
+            <div class="pill-row">
+              <span class="pill">REST API Design &amp; Integration</span>
+              <span class="pill">Middleware Architecture</span>
+              <span class="pill">ERP / WMS Ecosystem Design</span>
+              <span class="pill">OOP &amp; System Design</span>
+              <span class="pill">Full-stack Development</span>
+            </div>
+          </article>
+
+          <article class="expertise-card" data-reveal>
+            <h3>Specializations</h3>
+            <div class="pill-row">
+              <span class="pill">Business Process Automation</span>
+              <span class="pill">Internal Tools Development</span>
+              <span class="pill">Business Intelligence &amp; Reporting</span>
+              <span class="pill">Technical Project Leadership</span>
+              <span class="pill">MedTech / Logistics Domain</span>
+              <span class="pill">AI &amp; ML (In Progress)</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="insights">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-label">Knowledge base</p>
+          <h2>Insights</h2>
+        </div>
+        <div class="insights-grid">
+
+          <article class="insight-card" data-reveal>
+            <span class="tag">Architecture</span>
+            <h3>One Platform to Rule Them All: Why Fragmented Tooling Is Killing Your Organisation</h3>
+            <p>The hidden cost of 10 disconnected solutions - access management, data migrations, licensing sprawl, and
+              the engineering debt that quietly accumulates when nobody owns the big picture.</p>
+            <span class="status-pill">Coming Soon</span>
+          </article>
+
+          <article class="insight-card" data-reveal>
+            <span class="tag">Infrastructure</span>
+            <h3>The Cloud Isn't Always the Answer: A Case for Keeping Critical Systems In-House</h3>
+            <p>Security exposure, recurring SaaS costs, and vendor lock-in - why organisations that can run it locally,
+              should, and what full control over your own stack actually looks like in practice.</p>
+            <span class="status-pill">Coming Soon</span>
+          </article>
+
+          <article class="insight-card" data-reveal>
+            <span class="tag">Process Design</span>
+            <h3>Measuring Automation ROI: A Template for Engineering Teams</h3>
+            <p>How to calculate and present the business value of process automation to non-technical stakeholders and
+              decision-makers.</p>
+            <span class="status-pill">Coming Soon</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section" id="contact">
+    <div class="container footer-content" data-reveal>
+      <p class="section-label">Contact</p>
+      <h2>Let's build something that matters.</h2>
+      <p class="footer-subtitle">Available for product engineering &amp; architecture consulting.</p>
+      <div class="contact-links" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/pawe%C5%82-szojda-1a627526b" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6.94 8.5H3.56V19h3.38V8.5ZM5.25 3A1.97 1.97 0 0 0 3.3 4.97c0 1.08.86 1.97 1.93 1.97h.02a1.97 1.97 0 1 0 0-3.94ZM20.7 12.58c0-3.18-1.7-4.66-3.97-4.66-1.83 0-2.64 1-3.1 1.72V8.5h-3.38c.05.76 0 10.5 0 10.5h3.38v-5.86c0-.31.02-.62.11-.84.25-.62.82-1.27 1.78-1.27 1.26 0 1.77.96 1.77 2.36V19H20.7v-6.42Z" />
+          </svg>
+          <span>linkedin.com/in/pawelszojda</span>
+        </a>
+        <a href="https://github.com/pawelszojda" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .5C5.65.5.5 5.67.5 12.04c0 5.1 3.3 9.42 7.88 10.95.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.73.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.71 1.27 3.37.97.1-.75.4-1.27.73-1.56-2.55-.29-5.24-1.29-5.24-5.73 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.19 1.19a10.9 10.9 0 0 1 5.8 0c2.22-1.5 3.19-1.19 3.19-1.19.63 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.11 0 4.45-2.7 5.43-5.27 5.72.41.36.78 1.08.78 2.18 0 1.57-.01 2.83-.01 3.22 0 .31.21.68.8.56A11.56 11.56 0 0 0 23.5 12.04C23.5 5.67 18.35.5 12 .5Z" />
+          </svg>
+          <span>github.com/pawelszojda</span>
+        </a>
+        <a href="mailto:pawelszojda@icloud.com" aria-label="Send email">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 5.5h18A1.5 1.5 0 0 1 22.5 7v10A1.5 1.5 0 0 1 21 18.5H3A1.5 1.5 0 0 1 1.5 17V7A1.5 1.5 0 0 1 3 5.5Zm0 2.01v.14l9 5.62 9-5.62v-.14H3Zm18 2.49-8.6 5.37a.75.75 0 0 1-.8 0L3 10v7h18v-7Z" />
+          </svg>
+          <span>pawelszojda@icloud.com</span>
+        </a>
+      </div>
+      <p class="footer-note">© 2025 Paweł Szojda. Built in plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
