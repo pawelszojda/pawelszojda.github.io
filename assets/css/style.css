@@ -104,8 +104,8 @@ p { font-size: 1rem; font-weight: 400; color: var(--color-text-secondary); }
 .nav-toggle {
   display: none;
   align-items: center;
-  min-height: 40px;
-  padding: 0 14px;
+  min-height: 36px;
+  padding: 0 16px;
   border-radius: 8px;
   border: 1px solid var(--color-border);
   background: var(--color-surface-2);
@@ -182,6 +182,7 @@ p { font-size: 1rem; font-weight: 400; color: var(--color-text-secondary); }
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
+  column-gap: 0;
   list-style: none;
 }
 
@@ -193,6 +194,8 @@ p { font-size: 1rem; font-weight: 400; color: var(--color-text-secondary); }
   height: 1px;
   background: var(--color-border-strong);
 }
+.panel-item:not(:last-child) .panel-item-head { padding-right: 12px; }
+.panel-item:not(:last-child) > div:last-child { padding-right: 32px; }
 .panel-item h2 { font-size: 1rem; line-height: 1.5rem; letter-spacing: 0; margin-bottom: 4px; }
 .panel-item p { font-size: 0.9375rem; line-height: 1.375rem; color: var(--color-text-muted); }
 
@@ -241,7 +244,7 @@ p { font-size: 1rem; font-weight: 400; color: var(--color-text-secondary); }
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -500,6 +503,7 @@ a:focus-visible,
   .profile-card { max-width: 360px; }
   .panel-steps { grid-template-columns: 1fr; gap: 24px; }
   .panel-item:not(:last-child) .panel-item-head::after { display: none; }
+  .panel-item:not(:last-child) > div:last-child { padding-right: 0; }
 
   .insight-card {
     grid-template-columns: minmax(0, 1fr);
