@@ -34,3 +34,21 @@ const navObserver = new IntersectionObserver(
 );
 
 sections.forEach((section) => navObserver.observe(section));
+
+const nav = document.querySelector('.nav');
+const navToggle = document.querySelector('.nav-toggle');
+
+const isMenuOpen = () => navToggle.getAttribute('aria-expanded') === 'true';
+const setMenuOpen = (isOpen) => navToggle.setAttribute('aria-expanded', String(isOpen));
+
+nav.classList.add('is-collapsible');
+
+navToggle.addEventListener('click', () => setMenuOpen(!isMenuOpen()));
+navLinks.forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && isMenuOpen()) {
+    setMenuOpen(false);
+    navToggle.focus();
+  }
+});

@@ -27,7 +27,8 @@
     <div class="container">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="#hero">Paweł Szojda</a>
-        <div class="nav-links">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
           <a class="nav-link" href="#impact">Impact</a>
           <a class="nav-link" href="#projects">Projects</a>
           <a class="nav-link" href="#expertise">Expertise</a>
@@ -62,7 +63,7 @@
           </div>
         </div>
 
-        <aside class="hero-aside" data-reveal>
+        <aside data-reveal>
           <figure class="profile-card">
             <img class="profile-image" src="assets/images/profile-placeholder.avif" alt="Portrait of Paweł Szojda" width="400" height="500">
             <figcaption class="profile-meta">
@@ -80,21 +81,21 @@
               <div class="panel-item-head"><span class="step-number">01</span></div>
               <div>
                 <h2>Start with the constraint</h2>
-                <p>Understand where the business is losing time, money, or clarity.</p>
+                <p>Understand where the business is losing time, money, or clarity</p>
               </div>
             </li>
             <li class="panel-item">
               <div class="panel-item-head"><span class="step-number">02</span></div>
               <div>
                 <h2>Keep the system simple</h2>
-                <p>Choose the architecture that solves the problem without adding noise.</p>
+                <p>Choose the architecture that solves the problem without adding noise</p>
               </div>
             </li>
             <li class="panel-item">
               <div class="panel-item-head"><span class="step-number">03</span></div>
               <div>
                 <h2>Measure the result</h2>
-                <p>Focus on fewer errors, faster operations, and less manual work.</p>
+                <p>Focus on fewer errors, faster operations, and less manual work</p>
               </div>
             </li>
           </ol>
@@ -115,9 +116,8 @@
             <p>
               My approach starts with understanding the business constraint -
               then designing the simplest technical system that removes it.
-              Whether it's an API integration that eliminates manual data entry,
-              an internal tool that saves 10 hours of weekly work, or an
-              architectural decision that prevents six months of technical debt -
+              Whether it's an API integration that eliminates manual data entry
+              or an architectural decision that prevents six months of technical debt -
               the output is always measured in business value, not lines of code.
             </p>
           </div>
@@ -129,10 +129,6 @@
             <article class="metric">
               <strong>3</strong>
               <span>Industries: MedTech, distribution, logistics</span>
-            </article>
-            <article class="metric">
-              <strong>8+</strong>
-              <span>User roles on one B2B platform</span>
             </article>
           </div>
         </div>
@@ -211,9 +207,9 @@
               </div>
               <div>
                 <p class="project-heading">Outcome</p>
-                <p>Full order lifecycle automated from offer to ERP dispatch with zero manual handoffs. Tender
-                  spreadsheet normalization reduced from hours to minutes. Role-based access enforced across 8+ distinct
-                  user roles spanning internal staff and client organizations.</p>
+                <p>Full order lifecycle automated from offer to ERP dispatch. Tender
+                  spreadsheet normalization reduced from hours to minutes. Role-based access enforced across
+                  internal staff and client organizations.</p>
               </div>
             </div>
             <div class="pill-row" aria-label="Project stack">
@@ -251,23 +247,23 @@
           <article class="expertise-card" data-reveal>
             <h3>Architecture &amp; integration</h3>
             <div class="pill-row">
-              <span class="pill">REST API Design &amp; Integration</span>
-              <span class="pill">Middleware Architecture</span>
-              <span class="pill">ERP / WMS Ecosystem Design</span>
-              <span class="pill">OOP &amp; System Design</span>
-              <span class="pill">Full-stack Development</span>
+              <span class="pill">REST API design &amp; integration</span>
+              <span class="pill">Middleware architecture</span>
+              <span class="pill">ERP / WMS ecosystem design</span>
+              <span class="pill">OOP &amp; system design</span>
+              <span class="pill">Full-stack development</span>
             </div>
           </article>
 
           <article class="expertise-card" data-reveal>
             <h3>Specializations</h3>
             <div class="pill-row">
-              <span class="pill">Business Process Automation</span>
-              <span class="pill">Internal Tools Development</span>
-              <span class="pill">Business Intelligence &amp; Reporting</span>
-              <span class="pill">Technical Project Leadership</span>
-              <span class="pill">MedTech / Logistics Domain</span>
-              <span class="pill">AI &amp; ML (In Progress)</span>
+              <span class="pill">Business process automation</span>
+              <span class="pill">Internal tools development</span>
+              <span class="pill">Business intelligence &amp; reporting</span>
+              <span class="pill">Technical project leadership</span>
+              <span class="pill">MedTech / logistics domain</span>
+              <span class="pill">AI &amp; ML (in progress)</span>
             </div>
           </article>
 
