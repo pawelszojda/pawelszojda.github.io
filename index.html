@@ -12,12 +12,12 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pawelszojda.github.io/">
   <meta property="og:site_name" content="Paweł Szojda Portfolio">
-  <meta name="theme-color" content="#0A0A0A">
+  <meta name="theme-color" content="#0b0d14">
   <title>Paweł Szojda - Product Engineer & Solutions Architect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -26,9 +26,7 @@
   <header class="site-header">
     <div class="container">
       <nav class="nav" aria-label="Primary">
-        <a class="brand" href="#hero" aria-label="Go to home section">
-          <img src="assets/images/home.svg" alt="" aria-hidden="true">
-        </a>
+        <a class="brand" href="#hero">Paweł Szojda</a>
         <div class="nav-links">
           <a class="nav-link" href="#impact">Impact</a>
           <a class="nav-link" href="#projects">Projects</a>
@@ -44,13 +42,13 @@
     <section class="hero section" id="hero">
       <div class="container hero-layout">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Product engineering · architecture · automation</p>
+          <p class="eyebrow">MedTech · distribution · logistics</p>
           <h1>
             <span>Product Engineer</span>
             <span>&amp; Solutions Architect</span>
           </h1>
           <p class="hero-subheadline">
-            Bridging the gap between business requirements and technical execution.
+            Bridging the gap between business requirements and technical execution
           </p>
           <p class="hero-description">
             I partner with stakeholders to turn complex business challenges
@@ -59,8 +57,8 @@
             and I know where the real leverage is.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View Projects</a>
-            <a class="button button-secondary" href="#contact">Let's Talk</a>
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="#contact">Let's talk</a>
           </div>
         </div>
 
@@ -73,32 +71,34 @@
                 Interested in roles where business context matters as much as technical execution.</p>
             </figcaption>
           </figure>
+        </aside>
 
-          <div class="hero-panel">
-            <p class="panel-label">How I work</p>
-            <div class="panel-item">
-              <span>01</span>
+        <div class="hero-panel" data-reveal>
+          <p class="panel-label">How I work</p>
+          <ol class="panel-steps">
+            <li class="panel-item">
+              <div class="panel-item-head"><span class="step-number">01</span></div>
               <div>
                 <h2>Start with the constraint</h2>
                 <p>Understand where the business is losing time, money, or clarity.</p>
               </div>
-            </div>
-            <div class="panel-item">
-              <span>02</span>
+            </li>
+            <li class="panel-item">
+              <div class="panel-item-head"><span class="step-number">02</span></div>
               <div>
                 <h2>Keep the system simple</h2>
                 <p>Choose the architecture that solves the problem without adding noise.</p>
               </div>
-            </div>
-            <div class="panel-item">
-              <span>03</span>
+            </li>
+            <li class="panel-item">
+              <div class="panel-item-head"><span class="step-number">03</span></div>
               <div>
                 <h2>Measure the result</h2>
                 <p>Focus on fewer errors, faster operations, and less manual work.</p>
               </div>
-            </div>
-          </div>
-        </aside>
+            </li>
+          </ol>
+        </div>
       </div>
     </section>
 
@@ -106,10 +106,10 @@
       <div class="container impact-grid">
         <div data-reveal>
           <p class="section-label">Philosophy</p>
-          <h2>The Impact</h2>
+          <h2>The impact</h2>
         </div>
         <div class="impact-content" data-reveal>
-          <p class="impact-title">Software-driven Optimization</p>
+          <p class="impact-title">Software-driven optimization</p>
           <div class="rich-text">
             <p>I don't close tickets. I optimize processes.</p>
             <p>
@@ -128,11 +128,11 @@
             </article>
             <article class="metric">
               <strong>3</strong>
-              <span>Industries (MedTech, Distribution, Logistics)</span>
+              <span>Industries: MedTech, distribution, logistics</span>
             </article>
             <article class="metric">
-              <strong>∞</strong>
-              <span>Processes automated</span>
+              <strong>8+</strong>
+              <span>User roles on one B2B platform</span>
             </article>
           </div>
         </div>
@@ -143,12 +143,12 @@
       <div class="container">
         <div class="section-header" data-reveal>
           <p class="section-label">Case studies</p>
-          <h2>Featured Projects</h2>
+          <h2>Featured projects</h2>
         </div>
         <div class="projects-grid">
           <article class="project-card" data-reveal>
-            <span class="tag">Open Source</span>
-            <h3>Conference Room Booking System</h3>
+            <span class="tag">Open source</span>
+            <h3>Conference room booking system</h3>
             <div class="project-details">
               <div>
                 <p class="project-heading">Context</p>
@@ -178,12 +178,18 @@
               <span class="pill">Bootstrap</span>
             </div>
             <a class="project-link" href="https://github.com/pawelszojda/ConferenceRoomBooking/" target="_blank"
-              rel="noopener noreferrer">GitHub →</a>
+              rel="noopener noreferrer">View on GitHub</a>
           </article>
 
           <article class="project-card" data-reveal>
             <span class="tag">Enterprise · NDA</span>
-            <h3>B2B Medical Distribution Platform</h3>
+            <h3>B2B medical distribution platform</h3>
+            <ol class="flow" aria-label="Automated order lifecycle">
+              <li><span class="flow-state">Offer</span><span class="flow-note">Price thresholds</span></li>
+              <li><span class="flow-state">Approval</span><span class="flow-note">Role-based chain</span></li>
+              <li><span class="flow-state">Order</span><span class="flow-note">State managed</span></li>
+              <li class="flow-end"><span class="flow-state">Subiekt ERP</span><span class="flow-note">Auto dispatch</span></li>
+            </ol>
             <div class="project-details">
               <div>
                 <p class="project-heading">Context</p>
@@ -198,7 +204,7 @@
               </div>
               <div>
                 <p class="project-heading">Solution</p>
-                <p>Helped building a multi-role Rails monolith covering the full commercial lifecycle - offer creation
+                <p>Helped build a multi-role Rails monolith covering the full commercial lifecycle - offer creation
                   with
                   price-threshold approval flows, order state management, automated Subiekt ERP dispatch, and an async
                   AI pipeline for spreadsheet normalization via OpenAI.</p>
@@ -226,12 +232,12 @@
       <div class="container">
         <div class="section-header" data-reveal>
           <p class="section-label">Capabilities</p>
-          <h2>Technology &amp; Expertise</h2>
+          <h2>Technology &amp; expertise</h2>
         </div>
         <div class="expertise-grid">
 
           <article class="expertise-card" data-reveal>
-            <h3>Core Languages</h3>
+            <h3>Core languages</h3>
             <div class="pill-row">
               <span class="pill">Ruby on Rails</span>
               <span class="pill">C# / .NET</span>
@@ -243,7 +249,7 @@
           </article>
 
           <article class="expertise-card" data-reveal>
-            <h3>Architecture &amp; Integration</h3>
+            <h3>Architecture &amp; integration</h3>
             <div class="pill-row">
               <span class="pill">REST API Design &amp; Integration</span>
               <span class="pill">Middleware Architecture</span>
@@ -279,26 +285,26 @@
 
           <article class="insight-card" data-reveal>
             <span class="tag">Architecture</span>
-            <h3>One Platform to Rule Them All: Why Fragmented Tooling Is Killing Your Organisation</h3>
+            <h3>One platform to rule them all: why fragmented tooling is killing your organisation</h3>
             <p>The hidden cost of 10 disconnected solutions - access management, data migrations, licensing sprawl, and
               the engineering debt that quietly accumulates when nobody owns the big picture.</p>
-            <span class="status-pill">Coming Soon</span>
+            <span class="status-pill">Coming soon</span>
           </article>
 
           <article class="insight-card" data-reveal>
             <span class="tag">Infrastructure</span>
-            <h3>The Cloud Isn't Always the Answer: A Case for Keeping Critical Systems In-House</h3>
+            <h3>The cloud isn't always the answer: a case for keeping critical systems in-house</h3>
             <p>Security exposure, recurring SaaS costs, and vendor lock-in - why organisations that can run it locally,
               should, and what full control over your own stack actually looks like in practice.</p>
-            <span class="status-pill">Coming Soon</span>
+            <span class="status-pill">Coming soon</span>
           </article>
 
           <article class="insight-card" data-reveal>
-            <span class="tag">Process Design</span>
-            <h3>Measuring Automation ROI: A Template for Engineering Teams</h3>
+            <span class="tag">Process design</span>
+            <h3>Measuring automation ROI: a template for engineering teams</h3>
             <p>How to calculate and present the business value of process automation to non-technical stakeholders and
               decision-makers.</p>
-            <span class="status-pill">Coming Soon</span>
+            <span class="status-pill">Coming soon</span>
           </article>
 
         </div>
@@ -309,8 +315,8 @@
   <footer class="site-footer section" id="contact">
     <div class="container footer-content" data-reveal>
       <p class="section-label">Contact</p>
-      <h2>Let's build something that matters.</h2>
-      <p class="footer-subtitle">Available for product engineering &amp; architecture consulting.</p>
+      <h2>Tell me where your team loses time</h2>
+      <p class="footer-subtitle">Available for product engineering &amp; architecture consulting</p>
       <div class="contact-links" aria-label="Contact links">
         <a href="https://www.linkedin.com/in/pawe%C5%82-szojda-1a627526b" target="_blank" rel="noopener noreferrer"
           aria-label="LinkedIn profile">
@@ -335,7 +341,7 @@
           <span>pawelszojda@icloud.com</span>
         </a>
       </div>
-      <p class="footer-note">© 2025 Paweł Szojda. Built in plain HTML, CSS and JavaScript.</p>
+      <p class="footer-note">© 2026 Paweł Szojda. Built in plain HTML, CSS and JavaScript.</p>
     </div>
   </footer>
 
